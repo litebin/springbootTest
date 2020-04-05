@@ -1,0 +1,545 @@
+21:48:10.653 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 11672 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+21:48:10.655 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+21:48:10.696 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3911c2a7: startup date [Sun Apr 05 21:48:10 CST 2020]; root of context hierarchy
+21:48:13.519 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+21:48:13.553 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+21:48:13.574 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+21:48:13.574 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+21:48:13.582 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+21:48:14.086 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21:48:14.095 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+21:48:14.096 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3400 ms
+21:48:14.223 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+21:48:14.230 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:48:14.231 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+21:48:14.231 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+21:48:14.232 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+21:48:15.126 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:48:15.495 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3911c2a7: startup date [Sun Apr 05 21:48:10 CST 2020]; root of context hierarchy
+21:48:15.596 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+21:48:15.599 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+21:48:15.600 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+21:48:15.600 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testpage],methods=[GET]}" onto public java.lang.Object com.testfan.HelloSpringboot.testpage()
+21:48:15.601 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public java.util.List<com.testfan.model.CaseSystem> com.testfan.HelloSpringboot.testdb()
+21:48:15.602 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+21:48:15.607 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:48:15.608 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:48:15.657 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:48:15.657 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:48:16.255 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:48:16.257 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+21:48:16.267 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+21:48:16.287 INFO  [           main] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+21:48:16.300 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+21:48:16.319 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+21:48:16.381 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+21:48:16.387 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 6.099 seconds (JVM running for 9.534)
+21:48:18.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:21.038 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:24.006 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:27.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:48:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:15.021 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:24.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:28.979 INFO  [nio-8090-exec-2] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:49:28.979 INFO  [nio-8090-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:49:29.020 INFO  [nio-8090-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+21:49:30.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:49:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:18.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+21:50:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:01:45.159 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 6184 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+22:01:45.162 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+22:01:45.226 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@481a996b: startup date [Sun Apr 05 22:01:45 CST 2020]; root of context hierarchy
+22:01:46.616 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+22:01:46.627 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+22:01:46.637 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+22:01:46.637 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+22:01:46.641 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+22:01:46.858 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22:01:46.863 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+22:01:46.863 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1637 ms
+22:01:46.917 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+22:01:46.921 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:01:46.921 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:01:46.921 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:01:46.921 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:01:47.252 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:01:47.426 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@481a996b: startup date [Sun Apr 05 22:01:45 CST 2020]; root of context hierarchy
+22:01:47.476 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+22:01:47.478 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+22:01:47.479 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+22:01:47.479 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+22:01:47.479 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testpage],methods=[GET]}" onto public java.lang.Object com.testfan.HelloSpringboot.testpage()
+22:01:47.480 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public java.util.List<com.testfan.model.CaseSystem> com.testfan.HelloSpringboot.testdb()
+22:01:47.483 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:01:47.483 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:01:47.510 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:01:47.510 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:01:47.861 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:01:47.862 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+22:01:47.868 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+22:01:47.878 INFO  [           main] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+22:01:47.885 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+22:01:47.895 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:01:47.914 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+22:01:47.917 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 3.073 seconds (JVM running for 5.207)
+22:01:48.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:01:51.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:01:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:01:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:03.619 INFO  [nio-8090-exec-3] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:02:03.619 INFO  [nio-8090-exec-3] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:02:03.651 INFO  [nio-8090-exec-3] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+22:02:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:21.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:51.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:02:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:09.333 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 14964 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+22:03:09.337 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+22:03:09.395 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@258d79be: startup date [Sun Apr 05 22:03:09 CST 2020]; root of context hierarchy
+22:03:11.878 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+22:03:11.905 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+22:03:11.938 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+22:03:11.938 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+22:03:11.950 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+22:03:12.638 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22:03:12.651 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+22:03:12.657 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3263 ms
+22:03:12.833 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+22:03:12.862 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:03:12.863 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:03:12.863 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:03:12.863 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:03:13.661 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:03:14.052 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@258d79be: startup date [Sun Apr 05 22:03:09 CST 2020]; root of context hierarchy
+22:03:14.275 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public java.util.List<com.testfan.model.CaseSystem> com.testfan.HelloSpringboot.testdb()
+22:03:14.276 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testpage],methods=[GET]}" onto public java.lang.Object com.testfan.HelloSpringboot.testpage()
+22:03:14.277 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+22:03:14.279 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+22:03:14.280 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+22:03:14.280 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+22:03:14.284 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:03:14.285 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:03:14.340 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:03:14.341 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:03:14.812 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:03:14.817 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+22:03:14.829 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+22:03:14.846 INFO  [           main] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+22:03:14.859 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+22:03:14.873 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:03:14.907 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+22:03:14.913 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 6.006 seconds (JVM running for 10.319)
+22:03:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:24.012 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:29.145 INFO  [nio-8090-exec-2] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:03:29.145 INFO  [nio-8090-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:03:29.190 INFO  [nio-8090-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+22:03:30.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:39.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:03:57.041 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:04:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:04:03.005 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:04:06.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:04:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:04:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+22:04:12.450 INFO  [       Thread-7] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@258d79be: startup date [Sun Apr 05 22:03:09 CST 2020]; root of context hierarchy
+22:04:12.455 INFO  [       Thread-7] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+22:04:12.456 INFO  [       Thread-7] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+23:03:13.525 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 15644 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+23:03:13.529 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+23:03:13.608 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41e36e46: startup date [Sun Apr 05 23:03:13 CST 2020]; root of context hierarchy
+23:03:15.751 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+23:03:15.774 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+23:03:15.793 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+23:03:15.793 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+23:03:15.800 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+23:03:16.246 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23:03:16.255 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+23:03:16.255 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2647 ms
+23:03:16.367 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+23:03:16.374 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:03:16.375 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:03:16.375 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+23:03:16.375 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:03:16.607 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:03:16.967 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41e36e46: startup date [Sun Apr 05 23:03:13 CST 2020]; root of context hierarchy
+23:03:17.057 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+23:03:17.058 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+23:03:17.061 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+23:03:17.061 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+23:03:17.066 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:03:17.067 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:03:17.117 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:03:17.117 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:03:18.025 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:03:18.027 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+23:03:18.036 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+23:03:18.056 INFO  [           main] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+23:03:18.068 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+23:03:18.085 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:03:18.122 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+23:03:18.129 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 5.078 seconds (JVM running for 8.725)
+23:03:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:24.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:32.110 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+23:03:32.111 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+23:03:32.144 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+23:03:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:39.081 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:54.021 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:03:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:24.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:27.006 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:04:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:36.039 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:39.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:45.050 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:48.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:05:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:00.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:06.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:06:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:10.672 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 12064 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+23:50:10.675 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+23:50:10.736 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@636be97c: startup date [Sun Apr 05 23:50:10 CST 2020]; root of context hierarchy
+23:50:12.378 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+23:50:12.392 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+23:50:12.400 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+23:50:12.401 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+23:50:12.405 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+23:50:12.847 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23:50:12.861 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+23:50:12.861 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2125 ms
+23:50:12.979 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+23:50:12.986 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:50:12.987 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:50:12.987 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+23:50:12.987 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:50:13.237 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:50:13.605 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@636be97c: startup date [Sun Apr 05 23:50:10 CST 2020]; root of context hierarchy
+23:50:13.700 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+23:50:13.702 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+23:50:13.703 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+23:50:13.703 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+23:50:13.708 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:50:13.709 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:50:13.760 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:50:13.760 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:50:14.801 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:50:14.806 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+23:50:14.816 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+23:50:14.836 INFO  [           main] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+23:50:14.849 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+23:50:14.875 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:50:14.916 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+23:50:14.923 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 4.765 seconds (JVM running for 7.344)
+23:50:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:30.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:42.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:45.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:51.055 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:50:57.181 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+23:50:57.182 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+23:50:57.228 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+23:51:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:06.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:30.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:51:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:06.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:51.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:52:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:51.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:53:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:42.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:54:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:03.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:06.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:39.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:55:57.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:24.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:39.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:51.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:56:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:18.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:24.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:57:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:24.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:58:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:15.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:18.066 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:21.021 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:24.012 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+23:59:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
