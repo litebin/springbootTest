@@ -1,0 +1,1262 @@
+00:36:34.034 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 19056 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+00:36:34.037 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+00:36:34.100 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d74bf60: startup date [Mon Apr 06 00:36:34 CST 2020]; root of context hierarchy
+00:36:34.772 WARN  [           main] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[com.testfan]' package. Please check your configuration.
+00:36:35.422 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+00:36:35.436 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+00:36:35.446 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+00:36:35.446 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+00:36:35.450 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+00:36:35.670 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+00:36:35.675 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+00:36:35.675 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1575 ms
+00:36:35.731 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+00:36:35.734 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:36:35.735 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:36:35.735 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:36:35.735 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:36:35.793 WARN  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloSpringboot': Unsatisfied dependency expressed through field 'caseSystemMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.testfan.dao.CaseSystemMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+00:36:35.798 INFO  [           main] o.a.c.core.StandardService - Stopping service [Tomcat]
+00:36:35.817 WARN  [ost-startStop-1] o.a.c.l.WebappClassLoaderBase - The web application [springboot] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+00:36:35.834 INFO  [           main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+00:36:36.035 ERROR [           main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field caseSystemMapper in com.testfan.HelloSpringboot required a bean of type 'com.testfan.dao.CaseSystemMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.testfan.dao.CaseSystemMapper' in your configuration.
+
+00:45:40.133 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 17172 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+00:45:40.136 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+00:45:40.210 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@654f0d9c: startup date [Mon Apr 06 00:45:40 CST 2020]; root of context hierarchy
+00:45:40.963 WARN  [           main] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[com.testfan]' package. Please check your configuration.
+00:45:41.710 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+00:45:41.724 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+00:45:41.734 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+00:45:41.734 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+00:45:41.738 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+00:45:41.980 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+00:45:41.984 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+00:45:41.985 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1774 ms
+00:45:42.041 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+00:45:42.045 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:45:42.045 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:45:42.045 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:45:42.045 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:45:42.084 WARN  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloSpringboot': Unsatisfied dependency expressed through field 'caseSystemMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.testfan.dao.CaseSystemMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+00:45:42.086 INFO  [           main] o.a.c.core.StandardService - Stopping service [Tomcat]
+00:45:42.096 WARN  [ost-startStop-1] o.a.c.l.WebappClassLoaderBase - The web application [springboot] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+00:45:42.105 INFO  [           main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+00:45:42.201 ERROR [           main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field caseSystemMapper in com.testfan.HelloSpringboot required a bean of type 'com.testfan.dao.CaseSystemMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.testfan.dao.CaseSystemMapper' in your configuration.
+
+00:46:06.929 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 3144 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+00:46:06.932 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+00:46:06.978 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31368b99: startup date [Mon Apr 06 00:46:06 CST 2020]; root of context hierarchy
+00:46:07.897 WARN  [           main] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[com.testfan]' package. Please check your configuration.
+00:46:09.244 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+00:46:09.263 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+00:46:09.304 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+00:46:09.304 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+00:46:09.310 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+00:46:09.755 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+00:46:09.760 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+00:46:09.760 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2782 ms
+00:46:09.823 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+00:46:09.827 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:46:09.828 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:46:09.828 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:46:09.828 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:46:09.868 WARN  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloSpringboot': Unsatisfied dependency expressed through field 'caseSystemMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.testfan.dao.CaseSystemMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+00:46:09.870 INFO  [           main] o.a.c.core.StandardService - Stopping service [Tomcat]
+00:46:09.880 WARN  [ost-startStop-1] o.a.c.l.WebappClassLoaderBase - The web application [springboot] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+00:46:09.891 INFO  [           main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+00:46:09.995 ERROR [           main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field caseSystemMapper in com.testfan.HelloSpringboot required a bean of type 'com.testfan.dao.CaseSystemMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.testfan.dao.CaseSystemMapper' in your configuration.
+
+00:47:33.223 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 18968 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+00:47:33.227 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+00:47:33.328 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21de60b4: startup date [Mon Apr 06 00:47:33 CST 2020]; root of context hierarchy
+00:47:34.137 WARN  [           main] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[com.testfan]' package. Please check your configuration.
+00:47:34.975 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+00:47:34.990 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+00:47:35.002 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+00:47:35.002 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+00:47:35.006 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+00:47:35.260 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+00:47:35.264 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+00:47:35.265 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1937 ms
+00:47:35.327 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+00:47:35.332 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:47:35.332 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:47:35.332 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:47:35.332 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:47:35.371 WARN  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloSpringboot': Unsatisfied dependency expressed through field 'caseSystemMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.testfan.dao.CaseSystemMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+00:47:35.374 INFO  [           main] o.a.c.core.StandardService - Stopping service [Tomcat]
+00:47:35.384 WARN  [ost-startStop-1] o.a.c.l.WebappClassLoaderBase - The web application [springboot] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+00:47:35.394 INFO  [           main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+00:47:35.495 ERROR [           main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field caseSystemMapper in com.testfan.HelloSpringboot required a bean of type 'com.testfan.dao.CaseSystemMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.testfan.dao.CaseSystemMapper' in your configuration.
+
+00:50:26.218 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 3412 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+00:50:26.225 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+00:50:26.284 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d74bf60: startup date [Mon Apr 06 00:50:26 CST 2020]; root of context hierarchy
+00:50:27.405 WARN  [           main] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[com.testfan]' package. Please check your configuration.
+00:50:28.552 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+00:50:28.565 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+00:50:28.579 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+00:50:28.580 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+00:50:28.618 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+00:50:28.960 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+00:50:28.965 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+00:50:28.965 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2682 ms
+00:50:29.067 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+00:50:29.072 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:50:29.073 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:50:29.073 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:50:29.073 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:50:29.251 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:50:29.547 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d74bf60: startup date [Mon Apr 06 00:50:26 CST 2020]; root of context hierarchy
+00:50:29.602 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:50:29.604 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:50:29.635 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:50:29.635 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:50:30.332 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:50:30.333 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+00:50:30.338 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+00:50:30.352 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+00:50:30.362 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+00:50:30.382 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+00:50:30.386 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 4.588 seconds (JVM running for 8.213)
+00:50:38.676 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:50:38.677 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:50:38.711 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+00:52:28.637 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 15412 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+00:52:28.641 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+00:52:28.721 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f197a46: startup date [Mon Apr 06 00:52:28 CST 2020]; root of context hierarchy
+00:52:31.369 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+00:52:31.386 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+00:52:31.396 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+00:52:31.397 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+00:52:31.402 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+00:52:31.678 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+00:52:31.684 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+00:52:31.684 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2963 ms
+00:52:31.815 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+00:52:31.823 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:52:31.824 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:52:31.824 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:52:31.824 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:52:32.292 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:52:32.598 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f197a46: startup date [Mon Apr 06 00:52:28 CST 2020]; root of context hierarchy
+00:52:32.687 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+00:52:32.689 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+00:52:32.692 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+00:52:32.692 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+00:52:32.693 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public java.util.List<com.testfan.model.CaseSystem> com.testfan.HelloSpringboot.testdb()
+00:52:32.697 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:52:32.698 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:52:32.747 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:52:32.747 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:52:33.475 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:52:33.478 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+00:52:33.488 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+00:52:33.507 INFO  [           main] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+00:52:33.520 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+00:52:33.539 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+00:52:33.578 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+00:52:33.585 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 5.589 seconds (JVM running for 9.022)
+00:52:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:52:36.360 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:52:36.361 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:52:36.393 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+00:52:39.012 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:52:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:52:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:52:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:52:51.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:52:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:52:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:06.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:08.558 ERROR [nio-8090-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy63.selectByExample(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+00:53:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:15.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:36.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:45.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:53:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:03.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:06.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:18.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:24.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:54:57.003 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:09.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:15.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:24.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:51.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:55:57.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:30.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:42.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:45.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:56:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:00.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:12.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:18.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:21.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:27.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:30.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:33.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:39.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:51.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:54.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:57:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:00.021 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:06.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:33.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:36.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:45.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:48.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:51.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:54.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:58:57.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:00.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:03.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:06.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:09.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:12.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:15.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:18.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:21.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:22.594 ERROR [nio-8090-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy63.selectByExample(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+00:59:24.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:27.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:30.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:33.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:36.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:39.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:42.001 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:45.000 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+00:59:48.002 INFO  [pool-1-thread-1] com.testfan.task.Task - ======================
+01:01:43.410 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 10512 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+01:01:43.414 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+01:01:43.572 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31d7b7bf: startup date [Mon Apr 06 01:01:43 CST 2020]; root of context hierarchy
+01:01:45.713 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+01:01:45.729 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+01:01:45.739 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+01:01:45.740 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+01:01:45.745 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+01:01:46.224 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01:01:46.232 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+01:01:46.233 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2661 ms
+01:01:46.346 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+01:01:46.354 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:01:46.354 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:01:46.354 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:01:46.355 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:01:46.998 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:01:47.339 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31d7b7bf: startup date [Mon Apr 06 01:01:43 CST 2020]; root of context hierarchy
+01:01:47.434 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+01:01:47.437 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+01:01:47.438 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public java.util.List<com.testfan.model.CaseSystem> com.testfan.HelloSpringboot.testdb()
+01:01:47.440 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+01:01:47.441 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+01:01:47.446 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01:01:47.447 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01:01:47.506 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:01:47.507 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:01:48.176 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+01:01:48.179 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+01:01:48.190 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+01:01:48.216 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+01:01:48.235 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+01:01:48.274 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+01:01:48.280 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 5.423 seconds (JVM running for 8.886)
+01:01:54.134 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+01:01:54.135 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+01:01:54.168 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+01:01:54.225 ERROR [nio-8090-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy62.selectByExample(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+01:01:57.785 ERROR [nio-8090-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy62.selectByExample(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+01:02:10.815 ERROR [nio-8090-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy62.selectByExample(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:04:43.857 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 5304 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+13:04:43.934 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+13:04:44.005 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b0b0854: startup date [Mon Apr 06 13:04:44 CST 2020]; root of context hierarchy
+13:04:45.732 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+13:04:45.760 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+13:04:45.778 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+13:04:45.778 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+13:04:45.785 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+13:04:46.306 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13:04:46.315 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+13:04:46.315 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2310 ms
+13:04:46.426 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+13:04:46.433 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:04:46.434 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:04:46.434 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:04:46.435 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:04:47.066 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:04:47.419 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b0b0854: startup date [Mon Apr 06 13:04:44 CST 2020]; root of context hierarchy
+13:04:47.511 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+13:04:47.515 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+13:04:47.516 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+13:04:47.517 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public java.util.List<com.testfan.model.CaseSystem> com.testfan.HelloSpringboot.testdb()
+13:04:47.518 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+13:04:47.523 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:04:47.524 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:04:47.573 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:04:47.573 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:04:48.249 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:04:48.253 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+13:04:48.264 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+13:04:48.292 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+13:04:48.313 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:04:48.365 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+13:04:48.374 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 4.977 seconds (JVM running for 7.964)
+13:04:48.451 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:04:48.451 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:04:48.499 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+13:04:48.580 ERROR [nio-8090-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy62.selectByExample(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:06:33.522 ERROR [nio-8090-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy62.selectByExample(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:17:08.432 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 5984 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+13:17:08.436 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+13:17:08.536 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16ec5519: startup date [Mon Apr 06 13:17:08 CST 2020]; root of context hierarchy
+13:17:10.516 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+13:17:10.532 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+13:17:10.542 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+13:17:10.543 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+13:17:10.547 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+13:17:10.974 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13:17:10.983 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+13:17:10.983 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2447 ms
+13:17:11.096 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+13:17:11.104 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:17:11.104 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:17:11.105 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:17:11.105 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:17:11.758 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:17:12.100 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16ec5519: startup date [Mon Apr 06 13:17:08 CST 2020]; root of context hierarchy
+13:17:12.189 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+13:17:12.192 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+13:17:12.193 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+13:17:12.193 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+13:17:12.194 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public com.testfan.model.CaseSystem com.testfan.HelloSpringboot.testdb()
+13:17:12.198 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:17:12.200 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:17:12.249 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:17:12.249 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:17:12.898 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:17:12.901 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+13:17:12.917 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+13:17:12.944 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+13:17:12.964 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:17:13.007 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+13:17:13.015 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 5.01 seconds (JVM running for 8.881)
+13:17:21.439 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:17:21.439 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:17:21.470 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+13:17:21.526 ERROR [nio-8090-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByPrimaryKey] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByPrimaryKey
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy62.selectByPrimaryKey(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:18:24.780 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 4396 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+13:18:24.785 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+13:18:24.848 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e82df6a: startup date [Mon Apr 06 13:18:24 CST 2020]; root of context hierarchy
+13:18:26.323 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+13:18:26.337 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+13:18:26.346 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+13:18:26.346 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+13:18:26.351 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+13:18:26.609 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13:18:26.614 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+13:18:26.614 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1766 ms
+13:18:26.683 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+13:18:26.687 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:18:26.688 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:18:26.688 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:18:26.688 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:18:27.043 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:18:27.372 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e82df6a: startup date [Mon Apr 06 13:18:24 CST 2020]; root of context hierarchy
+13:18:27.463 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+13:18:27.464 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+13:18:27.465 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public com.testfan.model.CaseSystem com.testfan.HelloSpringboot.testdb()
+13:18:27.467 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+13:18:27.468 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+13:18:27.472 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:18:27.474 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:18:27.522 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:18:27.523 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:18:28.083 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:18:28.086 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+13:18:28.096 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+13:18:28.122 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+13:18:28.141 INFO  [           main] o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:18:28.180 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/springboot'
+13:18:28.187 INFO  [           main] c.t.SpringbootTestApplication - Started SpringbootTestApplication in 3.825 seconds (JVM running for 6.35)
+13:18:49.882 INFO  [nio-8090-exec-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:18:49.883 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:18:49.922 INFO  [nio-8090-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+13:18:49.987 ERROR [nio-8090-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/springboot] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByPrimaryKey] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.testfan.dao.CaseSystemMapper.selectByPrimaryKey
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:49)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy62.selectByPrimaryKey(Unknown Source)
+	at com.testfan.HelloSpringboot.testdb(HelloSpringboot.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+20:14:06.759 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 14616 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+20:14:06.764 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+20:14:06.839 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39529185: startup date [Mon Apr 06 20:14:06 CST 2020]; root of context hierarchy
+20:14:08.429 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+20:14:08.447 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+20:14:08.458 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+20:14:08.458 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+20:14:08.463 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+20:14:08.757 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20:14:08.762 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+20:14:08.762 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1923 ms
+20:14:08.837 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+20:14:08.842 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+20:14:08.843 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:14:08.843 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:14:08.843 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+20:14:09.234 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:14:09.446 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39529185: startup date [Mon Apr 06 20:14:06 CST 2020]; root of context hierarchy
+20:14:09.504 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+20:14:09.507 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+20:14:09.507 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testpage],methods=[GET]}" onto public java.lang.Object com.testfan.HelloSpringboot.testpage()
+20:14:09.507 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+20:14:09.508 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+20:14:09.508 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public com.testfan.model.CaseSystem com.testfan.HelloSpringboot.testdb()
+20:14:09.512 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:14:09.512 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:14:09.543 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:14:09.544 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:14:09.920 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+20:14:09.921 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+20:14:09.927 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+20:14:09.943 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+20:14:09.949 ERROR [           main] o.a.c.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8090]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8090]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.testfan.SpringbootTestApplication.main(SpringbootTestApplication.java:13)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+20:14:09.961 INFO  [           main] o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+20:14:09.961 INFO  [           main] o.a.c.core.StandardService - Stopping service [Tomcat]
+20:14:09.971 INFO  [           main] o.a.c.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+20:14:09.972 INFO  [           main] o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+20:14:09.972 INFO  [           main] o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+20:14:09.975 INFO  [           main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:14:09.981 ERROR [           main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8090, or configure this application to listen on another port.
+
+20:14:09.984 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39529185: startup date [Mon Apr 06 20:14:06 CST 2020]; root of context hierarchy
+20:14:09.986 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+20:14:09.986 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+20:14:55.886 INFO  [           main] c.t.SpringbootTestApplication - Starting SpringbootTestApplication on WIN-1GF9INK28GB with PID 5420 (D:\ideaSpace2\springbootTest\target\classes started by Administrator in D:\ideaSpace2\springbootTest)
+20:14:55.889 INFO  [           main] c.t.SpringbootTestApplication - No active profile set, falling back to default profiles: default
+20:14:55.947 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1817d444: startup date [Mon Apr 06 20:14:55 CST 2020]; root of context hierarchy
+20:14:57.587 INFO  [           main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+20:14:57.601 INFO  [           main] o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+20:14:57.609 INFO  [           main] o.a.c.core.StandardService - Starting service [Tomcat]
+20:14:57.609 INFO  [           main] o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+20:14:57.613 INFO  [ost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\tools\apache-maven-3.3.9\bin;D:\tools\Android_SDK\build-tools\29.0.2;D:\tools\Android_SDK\platform-tools;D:\tools\Android_SDK\emulator;D:\tools\Android_SDK\tools;C:\Program Files\Java\jdk1.8.0_221\jre\bin;D:\gongjuList\gitClient\Git\cmd;F:\apache-ant-1.10.3\bin;C:\ProgramData\chocolatey\bin;D:\tools\Android_SDK\tools\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\tools\Appium_All\worksoftware\nvm\v8.11.3;D:\tools\Appium_All\worksoftware\nvm\v10.16.3;D:\tools\Appium_All\nodejs\;D:\tools\python36\Scripts\;D:\tools\python36\;C:\Users\Administrator\.windows-build-tools\python27;C:\Users\Administrator\.windows-build-tools\python27\Scripts;D:\tools\securityTools\fiddler;D:\gongjuList\vsCode\Microsoft VS Code\bin;D:\gongjuList\allure\allure-2.12.1\bin;D:\gongjuList\JetBrains\IntelliJ IDEA 2019.3.1\bin;D:\tools\Appium_All\worksoftware\nvm;D:\tools\Appium_All\worksoftware\nvm\nodejs;D:\tools\Appium_All\worksoftware\nodejs\npm-global;C:\Users\Administrator\AppData\Roaming\npm;.]
+20:14:58.048 INFO  [ost-startStop-1] o.a.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20:14:58.057 INFO  [ost-startStop-1] o.a.c.c.C.[.[.[/springboot] - Initializing Spring embedded WebApplicationContext
+20:14:58.057 INFO  [ost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2110 ms
+20:14:58.170 INFO  [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+20:14:58.179 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+20:14:58.179 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:14:58.180 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:14:58.180 INFO  [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+20:14:58.868 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:14:59.196 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1817d444: startup date [Mon Apr 06 20:14:55 CST 2020]; root of context hierarchy
+20:14:59.285 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testdb],methods=[GET]}" onto public com.testfan.model.CaseSystem com.testfan.HelloSpringboot.testdb()
+20:14:59.286 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/testpage],methods=[GET]}" onto public java.lang.Object com.testfan.HelloSpringboot.testpage()
+20:14:59.287 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/map]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.testfan.HelloSpringboot.getALL()
+20:14:59.288 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/upload],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.showUploadPage()
+20:14:59.290 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/doUpload],methods=[POST]}" onto public java.lang.String com.testfan.HelloSpringboot.doUploadFile(org.springframework.web.multipart.MultipartFile)
+20:14:59.290 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/mvc],methods=[GET]}" onto public java.lang.String com.testfan.HelloSpringboot.HelloWorld(org.springframework.ui.Model)
+20:14:59.295 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:14:59.297 INFO  [           main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:14:59.345 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:14:59.345 INFO  [           main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:14:59.942 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+20:14:59.945 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+20:14:59.954 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+20:14:59.980 INFO  [           main] o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+20:14:59.989 ERROR [           main] o.a.c.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8090]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8090]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.testfan.SpringbootTestApplication.main(SpringbootTestApplication.java:13)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+20:15:00.008 INFO  [           main] o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+20:15:00.008 INFO  [           main] o.a.c.core.StandardService - Stopping service [Tomcat]
+20:15:00.020 INFO  [           main] o.a.c.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+20:15:00.021 INFO  [           main] o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+20:15:00.021 INFO  [           main] o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+20:15:00.026 INFO  [           main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:15:00.032 ERROR [           main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8090, or configure this application to listen on another port.
+
+20:15:00.033 INFO  [           main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1817d444: startup date [Mon Apr 06 20:14:55 CST 2020]; root of context hierarchy
+20:15:00.037 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+20:15:00.038 INFO  [           main] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans

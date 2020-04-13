@@ -1,0 +1,12 @@
+com\testfan\model\CaseSystemCriteria$Criterion.class
+com\testfan\service\MyTestService.class
+com\testfan\HelloSpringboot.class
+com\testfan\model\CaseSystemCriteria$GeneratedCriteria.class
+com\testfan\service\SpringContextUtils.class
+com\testfan\SpringbootTestApplication.class
+com\testfan\model\CaseSystemCriteria.class
+com\testfan\service\BaseService.class
+com\testfan\dao\CaseSystemMapper.class
+com\testfan\ServletInitializer.class
+com\testfan\model\CaseSystemCriteria$Criteria.class
+com\testfan\model\CaseSystem.class

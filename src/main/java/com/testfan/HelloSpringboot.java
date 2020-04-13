@@ -8,6 +8,7 @@ import java.util.Map;
 
 import javax.servlet.ServletContext;
 
+import com.testfan.service.MyTestService;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,88 +21,98 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-//import com.testfan.dao.CaseSystemMapper;
+import com.testfan.dao.CaseSystemMapper;
 import com.testfan.model.CaseSystem;
-import com.testfan.service.MyTestService;
+
 
 @Controller
 @RequestMapping(value = "/hello")
 public class HelloSpringboot {
+    private static Logger log = LoggerFactory.getLogger(HelloSpringboot.class);
 
-	@Autowired
-	MyTestService testservice;
+    @Autowired
+    MyTestService testservice;
 
-//	@Autowired
-//	CaseSystemMapper caseSystemMapper;
+    @Autowired
+    CaseSystemMapper caseSystemMapper;
 
-	private static Logger log = LoggerFactory.getLogger(HelloSpringboot.class);
 
-	@Autowired
-	private ServletContext servletContext;
+    @Autowired
+    private ServletContext servletContext;
 
-	// 上传文件存储目录
-	private static final String UPLOAD_DIRECTORY = "upload";
+    // 上传文件存储目录
+    private static final String UPLOAD_DIRECTORY = "upload";
 
-	@ResponseBody
-	@RequestMapping(value = "/map")
-	public Map<String, Object> getALL() {
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("name", "zhangsan");
-		map.put("age", 100);
-		return map;
-	}
+    @ResponseBody
+    @RequestMapping(value = "/map")
+    public Map<String, Object> getALL() {
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("name", "zhangsan");
+        map.put("age", 100);
+        return map;
+    }
 
-	@RequestMapping(value = "/mvc", method = RequestMethod.GET)
-	public String HelloWorld(Model model) {
+    @RequestMapping(value = "/mvc", method = RequestMethod.GET)
+    public String HelloWorld(Model model) {
 
-		model.addAttribute("message", "Hello Spring MVC!!!"); // 传参数给前端
+        model.addAttribute("message", "Hello Spring MVC!!!"); // 传参数给前端
 
-		// 视图渲染，/WEB-INF/view/HelloWorld.jsp
-		return "HelloWorld"; // 页面的名称，根据此字符串会去寻找名为HelloWorld.jsp的页面
-	}
+        // 视图渲染，/WEB-INF/view/HelloWorld.jsp
+        return "HelloWorld"; // 页面的名称，根据此字符串会去寻找名为HelloWorld.jsp的页面
+    }
 
-	@RequestMapping(value = "/upload", method = RequestMethod.GET)
-	public String showUploadPage() {
-		return "uploadFile"; // 上传单个文件
-	}
+    @RequestMapping(value = "/upload", method = RequestMethod.GET)
+    public String showUploadPage() {
+        return "uploadFile"; // 上传单个文件
+    }
 
-	/**
-	 * 上传单个文件操作
-	 * 
-	 * @param file
-	 * @return
-	 */
-	@RequestMapping(value = "/doUpload", method = RequestMethod.POST)
-	public String doUploadFile(@RequestParam("file") MultipartFile file) {
+    /**
+     * 上传单个文件操作
+     *
+     * @param file
+     * @return
+     */
+    @RequestMapping(value = "/doUpload", method = RequestMethod.POST)
+    public String doUploadFile(@RequestParam("file") MultipartFile file) {
 
-		if (!file.isEmpty()) {
-			log.debug("Process file: {}", file.getOriginalFilename());
-			try {
-				String uploadPath = servletContext.getRealPath("./") + File.separator + UPLOAD_DIRECTORY;
-				System.out.println("upload " + uploadPath);
-				// 这里将上传得到的文件保存至 d:\\temp\\file 目录
-				FileUtils.copyInputStreamToFile(file.getInputStream(),
-						new File(uploadPath, System.currentTimeMillis() + file.getOriginalFilename()));
-			} catch (IOException e) {
-				e.printStackTrace();
-				log.error(e.toString());
-			}
-		}
+        if (!file.isEmpty()) {
+            log.debug("Process file: {}", file.getOriginalFilename());
+            try {
+                String uploadPath = servletContext.getRealPath("./") + File.separator + UPLOAD_DIRECTORY;
+                System.out.println("upload " + uploadPath);
+                // 这里将上传得到的文件保存至 d:\\temp\\file 目录
+                FileUtils.copyInputStreamToFile(file.getInputStream(),
+                        new File(uploadPath, System.currentTimeMillis() + file.getOriginalFilename()));
+            } catch (IOException e) {
+                e.printStackTrace();
+                log.error(e.toString());
+            }
+        }
 
-		return "success";
-	}
+        return "success";
+    }
 
 //	@ResponseBody
-//	@RequestMapping(value = "/testdb", method = RequestMethod.GET)
-//	public List<CaseSystem> testdb() {
-//		List<CaseSystem> list = caseSystemMapper.selectByExample(null);
-//		return list;
-//	}
-	
-//	@ResponseBody
-//	@RequestMapping(value = "/testpage", method = RequestMethod.GET)
-//	public Object testpage() {
-//		return testservice.list(1, 2);
-//	}
+////	@RequestMapping(value = "/testdb", method = RequestMethod.GET)
+////	public List<CaseSystem> testdb() {
+////		List<CaseSystem> list = caseSystemMapper.selectByExample(null);
+////		return list;
+////	}
+
+
+    @ResponseBody
+    @RequestMapping(value = "/testdb", method = RequestMethod.GET)
+    public List<CaseSystem> testdb() {
+        List<CaseSystem> list = caseSystemMapper.selectByExample(null);
+//        CaseSystem caselist = caseSystemMapper.selectByPrimaryKey("1100071d-7cdf-434a-bb12-601afa3c0768");
+
+        return list;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/testpage", method = RequestMethod.GET)
+    public Object testpage() {
+        return testservice.list(1, 2);
+    }
 
 }
