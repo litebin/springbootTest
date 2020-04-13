@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="777bf96a-670b-43df-8319-e59457f0b796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.2020-04-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.2020-04-09.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.2020-04-10.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.2020-04-13.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/info.2020-04-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/info.2020-04-09.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/info.2020-04-10.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/info.2020-04-13.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springbootTest_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/springbootTest_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_29.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testfan/HelloSpringboot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testfan/HelloSpringboot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testfan/SpringbootTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testfan/SpringbootTestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testfan/dao/CaseSystemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testfan/dao/CaseSystemMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testfan/task/Task.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testfan/SpringbootTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testfan/SpringbootTestApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testfan/SpringbootTestNg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testfan/SpringbootTestNg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testfan/HelloSpringboot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testfan/HelloSpringboot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testfan/SpringbootTestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testfan/SpringbootTestApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/testfan/task/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/testfan/SpringbootTestApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/testfan/SpringbootTestApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/testfan/SpringbootTestNg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/testfan/SpringbootTestNg.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +102,7 @@
       <workItem from="1586094189849" duration="12083000" />
       <workItem from="1586142412352" duration="12414000" />
       <workItem from="1586440182592" duration="6138000" />
-      <workItem from="1586784848766" duration="1471000" />
+      <workItem from="1586784848766" duration="1703000" />
     </task>
     <task id="LOCAL-00001" summary="springboot模板工程&#10;文件上传模板">
       <created>1586102604005</created>
@@ -136,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586102604005</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="springboot模板工程&#10;文件上传模板">
+      <created>1586786402933</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586786402933</updated>
+    </task>
+    <task id="LOCAL-00003" summary="springboot模板工程&#10;文件上传模板">
+      <created>1586786437128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586786437128</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,10 +193,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="221" y="10" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1586785907798" />
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1586102612651">
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1586786447045">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1586102612651" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1586786447045" />
     <state x="400" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1586784846187">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
